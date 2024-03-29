@@ -1,6 +1,6 @@
 <script setup>
 import Navbar from './components/Navbar.vue';
-import Tasks from './pages/Tasks.vue';
+import Tasks from './pages/TasksPage.vue';
 import Footer from './components/Footer.vue';
 
 </script>

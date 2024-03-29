@@ -1,18 +1,5 @@
 <template>
-
-<main style="min-height: 50vh; margin-top: 2rem;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 offset-md-2">
-                    <!-- Add new Task -->
-                    <div class="relative">
-                        <input type="text" class="form-control form-control-lg padding-right-lg"
-                            placeholder="+ Add new task. Press enter to save." />
-                    </div>
-                    <!-- List of tasks -->
-                    <div class="card mt-2">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item py-3" v-for="task in tasks" :key = "task.id">
+    <li class="list-group-item py-3" v-for="task in tasks" :key = "task.id">
                                 <div class="d-flex justify-content-start align-items-center">
                                     <input class="form-check-input mt-0 completed" type="checkbox" />
                                     <div class="ms-2 flex-grow-1" title="Double click the text to edit or remove">
@@ -40,25 +27,11 @@
                                     </button>
                                 </div>
                             </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
- 
 </template>
+
+
 <script setup>
-import { onMounted, ref } from "vue";
-
-import { allTasks } from "../Http/task-api";
-
-const tasks = ref([])
-
-// import api from "@/Http/api"
-
-onMounted(async () => {
-    const {data} = await allTasks()
-    tasks.value = data.data
-})
+    defineProps({
+        task: object
+    })
 </script>
