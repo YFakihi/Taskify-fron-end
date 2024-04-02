@@ -1,14 +1,13 @@
 <script setup>
 import Navbar from './components/Navbar.vue';
-import Tasks from './pages/TasksPage.vue';
+import TasksPage from './pages/TasksPage.vue';
 import Footer from './components/Footer.vue';
-
 </script>
 
 <template>
-  <Navbar/>
-  <tasks/>
-  <Footer/>
+  <Navbar />
+  <TasksPage />
+  <Footer />
 </template>
 
 <style scoped>

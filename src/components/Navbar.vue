@@ -1,5 +1,4 @@
 <template>
-
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
   <!-- Container wrapper -->
@@ -43,9 +42,15 @@
           Login
         </button>
         <button data-mdb-ripple-init type="button" class="btn btn-primary me-3">
-          Sign up
+          Sign up 
         </button>
-       
+        <!-- <a
+          data-mdb-ripple-init
+          class="btn btn-dark px-3"
+          href="https://github.com/mdbootstrap/mdb-ui-kit"
+          role="button"
+          ><i class="fab fa-github"></i
+        ></a> -->
       </div>
     </div>
     <!-- Collapsible wrapper -->
@@ -53,5 +58,4 @@
   <!-- Container wrapper -->
 </nav>
 <!-- Navbar -->
-
 </template>
